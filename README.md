@@ -1,4 +1,4 @@
-# GettingAndCleaningData
+# Getting And Cleaning Data lass Project
 ## An explanation of the script follows in the lines below:
 
 ###For the scripts to work, you need to download and unzip the project file (i.e the UCI HAR Dataset file) into your working directory.
