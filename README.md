@@ -34,14 +34,14 @@
   ######In this step, I am creating a complete data set which contains all the individuals who participated in the training portion of the experiment 
 
 #####testtrain <- rbind(testfiles, trainfiles) ##creating one file for test and train files
-  ######In this step, I am creating a complete data set which contains all the 30 individuals who participated in the experiment. Hence I am concatenating the test and train complete files
+  ######In this step, I am creating a complete data set which contains all the 30 individuals who participated in the experiment. Hence I am concatenating the test and train datasets
 
 ######Now I am using the grep function to find the columns which contain the mean and standard deviations(std) of various measurements. Columns like that contains content such as ” fBodyAcc-meanFreq()-X” are not included in the search because as seen in the codebook, these are weighted average of the frequency components to obtain a mean frequency and not the mean of activities carried out which is the aim of this experiment.
 #####grep("mean\\(\\)",feature) ##finding which column names contain 'mean'
 #####grep("std\\(\\)",feature) ##finding which column names contain 'std'
 ######Note that when using the grep function, I used the original feature.txt data. The column numbers would therefore be off by 1 because I concatenated the subject file to the beginning of the data. I took this into account when sub-setting the required data. 
 #####meanstd <- testtrain[ ,c(1:7,42:47,82:87,122:127,162:167,202:203,215:216,228:229,241:242,254:255,267:272,346:351,425:430,504:505,517:518,530:531,543:544,563)] ##subsetting columns containing mean and std
-  ######Here I am sub-setting the columns that have contain the mean and std.
+  ######Here I am sub-setting the columns that contain the mean and std.
 #####values <- c("walking", "Walking_Upstairs", "Walking_Downstairs", "Sitting", "Standing", "Laying")
   ######I am creating labels with which to label the activity column with descriptive labels
 #####meanstdname <- meanstd
