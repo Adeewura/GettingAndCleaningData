@@ -51,4 +51,4 @@
 #####aggregatemean <- aggregate(x = meanstdname[c(2:67)], by = meanstdname[c("Action", "Subject")], FUN=mean) ## Calculating averages by subject and Activity
   ######This step then goes on to calculate the mean of the mean and std columns by the type of activity and the subject who carried out the activity.
 #####write.table(x=aggregatemean, file="Adeewuradata.txt", row.name=FALSE) ##Writing final data
-  ######The final data in the step above is being written in this step so that it can be submitted or used later.
+  ######The final data in the step above is being written in this step so that it can be submitted or used later
